@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Fonts */
+    --title: 'Big Shoulders Display', cursive;
+    --text: 'Lexend Deca', sans-serif;
+
+    /* Colors */
+
+    --brightOrange: #e38826;
+    --darkCyan: #006970;
+    --veryDarkCyan: #004241;
+    --transpWhite: #ffffffbb;
+    --veryLightGray: #f2f2f2;
+}
+
+html {
+    width: 100%;
+    height: 992px;
+    background-color: var(--veryLightGray);
+}
+
+body {
+    font-family: var(--text);
+    font-size: 15px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 3em 4em 4em 3em;
+}
+
+.sedans {
+    background-color: var(--brightOrange);
+    margin: 2em 2em 0 2em;
+    border-radius: 10px 10px 0 0;
+}
+
+.icon {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 2em;
+}
+
+.icon-sedans {
+    background-image: url("../img/icon-sedans.svg");
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: var(--title);
+    color: var(--veryLightGray);
+    font-size: 2.5rem;
+    margin-bottom: .7em;
+}
+
+.text {
+    color: var(--transpWhite);
+    line-height: 1.7rem;
+    margin-bottom: 2.5em;
+}
+
+.link{
+    text-decoration: none;
+    padding: 1em 1.5em;
+    background-color: var(--veryLightGray);
+    border: 2px solid var(--veryLightGray);
+    border-radius: 30px;
+}
+
+.link-sedans {
+    color: var(--brightOrange);
+}
+
+.link-sedans:hover {
+    cursor: pointer;
+    background-color: var(--brightOrange);
+    border: 2px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+}
+
+.suvs {
+    background-color: var(--darkCyan);
+    margin: 0 2em;
+}
+
+.icon-suvs {
+    background-image: url("../img/icon-suvs.svg");
+}
+
+.link-suvs {
+    color: var(--darkCyan);
+}
+
+.link-suvs:hover {
+    cursor: pointer;
+    background-color: var(--darkCyan);
+    border: 2px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+}
+
+.luxury {
+    background-color: var(--veryDarkCyan);
+    margin: 0 2em 2em 2em;
+    border-radius: 0 0 10px 10px;
+}
+
+.icon-luxury {
+    background-image: url("../img/icon-luxury.svg");
+}
+
+.link-luxury {
+    color: var(--veryDarkCyan);
+}
+
+.link-luxury:hover {
+    cursor: pointer;
+    background-color: var(--veryDarkCyan);
+    border: 2px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        height: 668px;
+    }
+
+    body {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        width: 100%;
+        height: 60%;
+    }
+
+    .container {
+        height: 100%;
+        max-width: 250px;
+    }
+    .text {
+        margin-bottom: 9em;
+    }
+
+    .sedans {
+        margin: 0 0 0 3em;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .suvs {
+        margin: 0;
+    }
+    .luxury {
+        margin: 0 3em 0 0;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .container {
+        max-width: 280px;
+    }
+}
